@@ -52,7 +52,8 @@ namespace ArrayInCSharp
                 pushvalue = "X";
             }
 
-            if (int.TryParse(Console.ReadLine(), out int position))
+            bool key = int.TryParse(Console.ReadLine(), out int position);
+            if (key)
             {
                 UpdatePosition(position, pushvalue);
 
